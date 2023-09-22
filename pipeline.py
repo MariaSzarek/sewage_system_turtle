@@ -8,7 +8,7 @@ import heapq
 from points import Point
 
 
-def find_route(the_point, last_point):
+def find_route(the_point, last_point, dim_x, dim_y):
     open_list = [(0, the_point)]  # punkty do sprawdzenia
     closed_list = set()  # zbiór punktów sprawdzonych
     previous = {}  # dict z poprzednikami w ścieżce
@@ -37,7 +37,7 @@ def find_route(the_point, last_point):
                 x, y = current_point.x, current_point.y
                 nx, ny = x + dx, y + dy
 
-                if 0 <= nx < 10 and 0 <= ny < 10:
+                if 0 <= nx < dim_x and 0 <= ny < dim_y:
                     neighbor = Point(nx, ny)
                     new_cost = costs[current_point] + 1
 
