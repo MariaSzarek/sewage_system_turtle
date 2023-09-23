@@ -21,7 +21,7 @@ def draw_points(punkty, offset, scale, rozmiar=10):
         t.goto(punkt.x * scale - offset[0], punkt.y * scale - offset[1])
         t.dot(5)
 
-def coordinates(punkty, offset, scale):
+def draw_coordinates(punkty, offset, scale):
     t = turtle.Turtle()
     t.speed(SPEED)
     for punkt in punkty:

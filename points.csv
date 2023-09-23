@@ -1,7 +1,8 @@
-15, 10
+15, 10, dlugosc i szerokosc budynku
 x, y
-5, 0, wyjście z budynku
+8, 0, wyjście z budynku musi być (x, 0)
 10, 9
 1, 5
 3, 8
-7, 2
+7, 4
+1, 7
