@@ -11,7 +11,7 @@ def offset(x, y, scale):
     offset_y = y / 2 * scale
     return (offset_x, offset_y)
 
-def draw_points(punkty, offset, scale, rozmiar=10):
+def draw_points(punkty, offset, scale):
     t = turtle.Turtle()
     t.speed(SPEED)
     t.penup()

@@ -49,16 +49,16 @@ def find_route(the_point, last_point, dim_x, dim_y):
 
     return None
 
-def length_route(trasa):
-    dlugosc = 0.0
-    for i in range(len(trasa) - 1):
-        punkt1 = trasa[i]
-        punkt2 = trasa[i + 1]
-        odleglosc = ((punkt2.x - punkt1.x) ** 2 + (punkt2.y - punkt1.y) ** 2) ** 0.5
-        dlugosc += odleglosc
-    return dlugosc
+# def length_route(trasa):
+#     dlugosc = 0.0
+#     for i in range(len(trasa) - 1):
+#         punkt1 = trasa[i]
+#         punkt2 = trasa[i + 1]
+#         odleglosc = ((punkt2.x - punkt1.x) ** 2 + (punkt2.y - punkt1.y) ** 2) ** 0.5
+#         dlugosc += odleglosc
+#     return dlugosc
 
-def zaglebienie(dlugosc):
+def depth(dlugosc):
     dno = dlugosc/100*2
     return dno
 
