@@ -12,7 +12,7 @@ of pipes for installation and generate pipeline routes with turtle.
 The generator is based on the A* algorithm.
 Input data are kept in points.csv. Mandatory structure of the file:
 
----
+
 >15, 10,  length and width of the building
 >
 >x, y
@@ -24,7 +24,7 @@ Input data are kept in points.csv. Mandatory structure of the file:
 >1, 5, sample point
 >
 > ... , rest points
----
+
 
 Program generates routes.csv with data:
 * for each point connected to the sewage system routes (point by point)
