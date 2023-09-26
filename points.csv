@@ -1,6 +1,6 @@
-15, 10, dlugosc i szerokosc budynku
+15, 10,  length and width of the building
 x, y
-8, 0, wyjście z budynku musi być (x, 0)
+8, 0, last point of sewage system, need to be (x, 0)
 10, 9
 1, 5
 3, 8

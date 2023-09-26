@@ -1,8 +1,3 @@
-"""
-klasa punktu, miejsca wpięcia kanalizacji sanitarnej o podanych wspolrzednych (x, y)
-
-"""
-
 class Point:
     def __init__(self, x, y):
         self.x = x

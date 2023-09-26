@@ -1,18 +1,11 @@
-"""
-wyznaczanie punktów znajdujących się na najkrótszej trasie między punktem początkowym a końcowym
-algorytm A*
-(uproszczenie - koszt każdego ruchu = 1)
-"""
-
 import heapq
 from points import Point
 
-
 def find_route(the_point, last_point, dim_x, dim_y):
-    open_list = [(0, the_point)]  # punkty do sprawdzenia
-    closed_list = set()  # zbiór punktów sprawdzonych
-    previous = {}  # dict z poprzednikami w ścieżce
-    costs = {the_point: 0}  # dict z kosztami dotarcia do punktu
+    open_list = [(0, the_point)]
+    closed_list = set()
+    previous = {}
+    costs = {the_point: 0}
 
     while open_list:
         cost, current_point = heapq.heappop(open_list)
@@ -49,18 +42,9 @@ def find_route(the_point, last_point, dim_x, dim_y):
 
     return None
 
-# def length_route(trasa):
-#     dlugosc = 0.0
-#     for i in range(len(trasa) - 1):
-#         punkt1 = trasa[i]
-#         punkt2 = trasa[i + 1]
-#         odleglosc = ((punkt2.x - punkt1.x) ** 2 + (punkt2.y - punkt1.y) ** 2) ** 0.5
-#         dlugosc += odleglosc
-#     return dlugosc
-
-def depth(dlugosc):
-    dno = dlugosc/100*2
-    return dno
+def depth(length):
+    bottom = length / 100 * 2
+    return bottom
 
 
 
