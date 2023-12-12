@@ -42,6 +42,6 @@ connected to main pipe and change slope of pipes.
 
 ## Running
 To run this project 
->python manage.py 
+>python main.py 
 
 
