@@ -6,12 +6,12 @@
 * [Setup]
 
 ## General info
-
 Sewage System Route Generator calculates the total length and depth 
 of pipes for installation and generate pipeline routes with turtle. 
 The generator is based on the A* algorithm.
-Input data are kept in points.csv. Mandatory structure of the file: 
----
+Input data are kept in points.csv. Mandatory structure of the file:
+
+
 >15, 10,  length and width of the building
 >
 >x, y
@@ -23,7 +23,7 @@ Input data are kept in points.csv. Mandatory structure of the file:
 >1, 5, sample point
 >
 > ... , rest points
----
+
 
 Program generates routes.csv with data:
 * for each point connected to the sewage system routes (point by point)
@@ -42,6 +42,6 @@ connected to main pipe and change slope of pipes.
 
 ## Running
 To run this project 
->python manage.py 
+>python main.py 
 
 
