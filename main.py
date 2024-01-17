@@ -52,14 +52,6 @@ for the_point in all_points[1:]:
             other_route = route
     routes[(the_point.x, the_point.y)] = [(point.x, point.y) for point in other_route]
 
-
-with open("routes.csv", "w") as csv_file:
-    csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(["First point", "Route"])
-    for point_key, route in routes.items():
-        csv_writer.writerow([point_key, route])
-
-
 final_routes = {}
 for k, i in routes.items():
     for g, j in routes.items():
@@ -74,7 +66,7 @@ for k, i in routes.items():
 pipe_lenght = 0
 for i in final_routes.values():
     pipe_lenght += len(i)-1
-print(f" Length of pipelines: {pipe_lenght} m")
+print(f"Length of pipelines: {pipe_lenght} m")
 
 
 longest_route = []
@@ -84,7 +76,6 @@ for i in final_routes.values():
             end_point_i = i[-1]
             index_end_point_j = j.index(end_point_i) if end_point_i in j else None
             if index_end_point_j is not None:
-                print(index_end_point_j)
                 longest_route_len = (len(j) - index_end_point_j - 1 + len(i) - 1)
                 if len(first_route) < longest_route_len:
                     longest_route = i[:-1] + j[index_end_point_j:]

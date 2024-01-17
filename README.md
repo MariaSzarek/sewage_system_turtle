@@ -1,7 +1,7 @@
 # Sewage system with Turtle
 
 ## Table of Contents
-* [General info]
+* [General info]  
 * [Technologies]
 * [Setup]
 
